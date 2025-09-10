@@ -1,1 +1,6 @@
-
+CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
